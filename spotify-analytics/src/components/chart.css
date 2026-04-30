@@ -1,0 +1,55 @@
+.bar1{
+  width: 550px;
+  height: 400px;
+  z-index: 100000;
+  margin-top: 100px;
+
+}
+.bar2{
+  width:550px;
+  height: 400px;
+  z-index: 100000;
+  margin-top: 130px;
+  margin-right: 70px;
+
+}
+
+.pie{
+  width: 300px;
+  height: 300px;
+  z-index: 100000;
+
+}
+
+.piechart{
+  background-color: rgb(255, 255, 255);
+  width: 700px;
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px;
+  z-index: 0;
+}
+.barchart{
+  background-color: rgb(255, 255, 255);
+  width: 700px;
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px;
+  z-index: 0;
+  
+}
+
+.features{
+  margin-top: 10px;
+  margin-left: 80px;
+}
+.features1{
+  margin-top: 30px;
+  margin-left: 80px;
+}

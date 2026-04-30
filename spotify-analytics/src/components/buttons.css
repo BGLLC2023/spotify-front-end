@@ -1,0 +1,16 @@
+.button{
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 30px;
+  font-size: 11px;
+}
+
+.button-div{
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  margin-left: 100px;
+  column-gap: 5px;
+
+
+}
