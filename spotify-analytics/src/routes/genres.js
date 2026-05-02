@@ -25,10 +25,10 @@ async function fetchData(url){
 
 
 
-export const fetchGenre = (id) => fetchData(`http://127.0.0.1:8000/top-genres/${id}`);
-export const fetchSubscriptionType = (id) => fetchData(`http://127.0.0.1:8000/subscription-type/${id}`);
-export const fetchAdConversions = (id) => fetchData(`http://127.0.0.1:8000/ad-conversion/${id}`);
-export const fetchDesiredFeatures = (id) => fetchData(`http://127.0.0.1:8000/desired-features/${id}`);
+export const fetchGenre = (id) => fetchData(`https://spotify-backend-6ff5.onrender.com/top-genres/${id}`);
+export const fetchSubscriptionType = (id) => fetchData(`https://spotify-backend-6ff5.onrender.com/subscription-type/${id}`);
+export const fetchAdConversions = (id) => fetchData(`https://spotify-backend-6ff5.onrender.com/ad-conversion/${id}`);
+export const fetchDesiredFeatures = (id) => fetchData(`hhttps://spotify-backend-6ff5.onrender.com/desired-features/${id}`);
 
 
 
