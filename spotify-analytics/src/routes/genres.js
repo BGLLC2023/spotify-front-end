@@ -28,7 +28,7 @@ async function fetchData(url){
 export const fetchGenre = (id) => fetchData(`https://spotify-backend-6ff5.onrender.com/top-genres/${id}`);
 export const fetchSubscriptionType = (id) => fetchData(`https://spotify-backend-6ff5.onrender.com/subscription-type/${id}`);
 export const fetchAdConversions = (id) => fetchData(`https://spotify-backend-6ff5.onrender.com/ad-conversion/${id}`);
-export const fetchDesiredFeatures = (id) => fetchData(`hhttps://spotify-backend-6ff5.onrender.com/desired-features/${id}`);
+export const fetchDesiredFeatures = (id) => fetchData(`https://spotify-backend-6ff5.onrender.com/desired-features/${id}`);
 
 
 
