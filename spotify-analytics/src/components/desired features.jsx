@@ -10,12 +10,15 @@ const FeaturesComponent = () => {
   const canvasRef = useRef(null);
   const [values, setValues] = useState([0]);
   const [keys, setKeys] = useState(['Select a Country']);
+  const [country, setCountry] = useState('select a country');
   const countryIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
   const fetchData = async (id) => {
     const data = await fetchDesiredFeatures(id);
+    const country_names = Object.values(data.country_name)
     setKeys(Object.keys(data.desired_features_counts));
     setValues(Object.values(data.desired_features_counts));
+    setCountry(country_names.join(''));
   }
 
   useEffect(() => {
@@ -28,7 +31,10 @@ const FeaturesComponent = () => {
       type: "bar",
       data: {
         labels: keys,
-        datasets:  [{ label: "Top 5 Desired Features", data: values }],
+        datasets:  [{ label: `${country} Top 3 Desired Features`, data: values }],
+  
+        
+      
 
       },
       options: {
@@ -36,14 +42,13 @@ const FeaturesComponent = () => {
           x: {
             ticks: {
               font: {
-                size: 8
-              },
-              maxRotation: 0,
-              minRotation: 0
+                size: 12
+              }
             }
           }
         }
       }
+   
     });
     return () => chart.destroy();
   }, [keys, values]);
@@ -52,10 +57,10 @@ const FeaturesComponent = () => {
   <div className="barchart">
     <div  className='bar2' >
       <canvas ref={canvasRef} />
-        <div className="features">
-          <ButtonsComponent func={fetchData} list={countryIds} />
-        </div>
+        
+        
     </div>
+    <ButtonsComponent func={fetchData} list={countryIds} />
   </div>
   );
    

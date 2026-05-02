@@ -4,6 +4,7 @@ import ChartComponent from './components/genres-component.jsx';
 import SubscriptionComponent from './components/subscriptions.jsx';
 import ConversionsComponent from './components/ad-conversion.jsx';
 import FeaturesComponent from './components/desired features.jsx';
+import UpdateComponent from './components/update.jsx';
 
 function App() {
   return (
@@ -15,7 +16,6 @@ function App() {
         <FeaturesComponent />
         <SubscriptionComponent />
         <ConversionsComponent />
-        
       </div>
       
     </div>
