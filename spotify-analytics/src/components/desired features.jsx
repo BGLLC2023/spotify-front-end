@@ -10,7 +10,7 @@ const FeaturesComponent = () => {
   const canvasRef = useRef(null);
   const [values, setValues] = useState([0]);
   const [keys, setKeys] = useState(['Select a Country']);
-  const [country, setCountry] = useState('select a country');
+  const [country, setCountry] = useState('select a country for');
   const countryIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
   const fetchData = async (id) => {

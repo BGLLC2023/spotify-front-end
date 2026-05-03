@@ -5,11 +5,12 @@ import SubscriptionComponent from './components/subscriptions.jsx';
 import ConversionsComponent from './components/ad-conversion.jsx';
 import FeaturesComponent from './components/desired features.jsx';
 import UpdateComponent from './components/update.jsx';
+import Navbar from './components/navbar.jsx';
 
 function App() {
   return (
     <div className="App">
-     
+      <Navbar />
      
       <div className='components' >
         <ChartComponent />
