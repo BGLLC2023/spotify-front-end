@@ -46,7 +46,7 @@ const SubscriptionComponent = () => {
 
   return (
   <div className="piechart">
-    <p>{country} Subscription type</p>
+    <p>{country} subscription type</p>
     <div  className='pie' >
       
       <canvas ref={canvasRef} />

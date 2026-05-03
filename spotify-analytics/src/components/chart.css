@@ -31,6 +31,8 @@
   align-items: center;     /* horizontal centering */
   gap: 12px;
   box-shadow: 2px 2px 2px rgba(134, 134, 134, 0.34);
+  font-size: 12px;
+  color: rgb(116, 116, 116);
 }
 .barchart {
 
